@@ -1,0 +1,104 @@
+.navContainer{
+    padding: 1rem 2rem;
+    box-shadow:0px 0px 6px #EDF4FC;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    list-style: none;
+}
+.searchinput{
+    border: none;
+    background-color:#EDF4FC;
+    border-bottom: none;
+    outline: none;
+    padding: 0.5rem;
+}
+.searchdiv{
+    display: flex;
+    background-color: #EDF4FC;
+    align-items: center;
+    border-radius: 10px;
+}
+.searchicon{
+    margin: 0 1rem ;
+}
+.profileContainer{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.mark{
+    color: white;
+    font-size: 0.5rem;
+    padding: 0.2rem;
+    background-color: black;
+}
+.profileImgContainer{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+.profileImg{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.homeText{
+    color: #CA79C6;
+}
+.menuCon{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: none;
+}
+.menu{
+    cursor: pointer;
+    /* display: none; */
+    font-size: 2rem;
+}
+.menuItem{
+    display: none;
+    transition: 0.5s ease-in;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    padding: 2rem 4rem;
+    gap:1rem;
+    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: gray;
+    
+}
+.show li a{
+    display: flex;
+    gap: 1rem;
+    color: black;
+}
+.cancel{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    cursor: pointer;
+    color: white;
+    font-size: 2rem;
+}
+@media screen and (max-width:1024px) {
+    .navContainer{
+        display: none;
+        border: solid;
+    }
+    .menuCon{
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+}

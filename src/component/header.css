@@ -1,0 +1,25 @@
+.headerContainer{
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 6px 6px 6px  #EDF4FC;
+    height: fit-content;
+    margin: 0.7rem;
+    width: 80%;
+   
+}
+
+.headerContainer li a{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+@media screen and (max-width:1024px) {
+    .headerContainer{
+        width: 93%;
+        margin: auto;
+        flex-wrap: wrap;
+       
+    }
+   
+}
