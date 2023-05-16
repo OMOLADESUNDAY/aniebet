@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaAmbulance, FaRegHospital, FaShuttleVan, FaUser, FaXRay } from 'react-icons/fa'
 import {RiHospitalFill, RiMessage2Fill} from 'react-icons/ri'
 import {CgPathTrim} from 'react-icons/cg'
@@ -9,22 +9,9 @@ import {ImFloppyDisk} from 'react-icons/im'
 import { Link } from 'react-router-dom'
 import './aside.css'
 import { HiOutlineDownload, HiUser } from 'react-icons/hi'
-import { BiBorderAll, BiMenu } from 'react-icons/bi'
+import { BiBorderAll } from 'react-icons/bi'
 
 const Aside = () => {
-  const [show,setShow]=useState(false)
-  const togglerHandler = () => {
-    setShow(!show);
-      const checkSize = window.addEventListener("resize", () => {
-        if (window.screen.width > 768) {
-          setShow(false);
-          }
-      });
-   
-      return () => {
-          window.removeEventListener("resize", checkSize);
-     };
-}
   return (
     <aside className='asideContainer'>
     <li><Link><RiHospitalFill/>Front Office</Link></li>
